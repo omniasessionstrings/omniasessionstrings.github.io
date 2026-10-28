@@ -4,9 +4,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0c191a">
 
 <title>Omnia Session Strings | Recording, Orchestration & Production</title>
-<meta name="description" content="Omnia Session Strings brings together recording, orchestration, production, musician contracting and live performance. Founded by Hamilton Hardin and Nicole Hardin.">
+<meta name="description" content="Omnia Session Strings brings together recording, orchestration, music production, musician contracting and live performance. Founded by Hamilton Hardin and Nicole Hardin.">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Omnia Session Strings">
@@ -15,7 +16,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
@@ -29,9 +30,13 @@
   --muted:#6b665f;
 }
 
-* { box-sizing:border-box; }
+* {
+  box-sizing:border-box;
+}
 
-html { scroll-behavior:smooth; }
+html {
+  scroll-behavior:smooth;
+}
 
 body {
   margin:0;
@@ -41,8 +46,15 @@ body {
   line-height:1.7;
 }
 
-a { color:inherit; text-decoration:none; }
-img { display:block; width:100%; }
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+img {
+  display:block;
+  width:100%;
+}
 
 .container {
   width:min(100% - 56px,1240px);
@@ -87,9 +99,10 @@ img { display:block; width:100%; }
 
 .nav-links {
   display:flex;
+  align-items:center;
   flex-wrap:wrap;
   justify-content:flex-end;
-  gap:23px;
+  gap:21px;
 }
 
 .nav-links a {
@@ -98,7 +111,22 @@ img { display:block; width:100%; }
   text-transform:uppercase;
 }
 
-.nav-links a:hover { color:var(--gold); }
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color:var(--gold);
+}
+
+.instagram-nav {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold);
+}
+
+.instagram-nav svg {
+  width:19px;
+  height:19px;
+}
 
 /* HERO */
 
@@ -123,6 +151,7 @@ img { display:block; width:100%; }
 .hero-image {
   min-width:0;
   overflow:hidden;
+  background:linear-gradient(145deg,#344746,#142526);
 }
 
 .hero-image:first-child {
@@ -140,10 +169,11 @@ img { display:block; width:100%; }
   inset:0;
   background:linear-gradient(
     90deg,
-    rgba(8,16,17,.3),
+    rgba(8,16,17,.30),
     rgba(8,16,17,.47) 50%,
-    rgba(8,16,17,.2)
+    rgba(8,16,17,.20)
   );
+  pointer-events:none;
 }
 
 .hero-content {
@@ -219,12 +249,25 @@ img { display:block; width:100%; }
   padding-right:0;
 }
 
-.preview-card img {
+.preview-photo {
   height:210px;
-  object-fit:cover;
+  overflow:hidden;
+  background:linear-gradient(135deg,#9c8a78,#4c514b);
 }
 
-.preview-body { padding:15px 12px 10px; }
+.preview-photo img {
+  height:100%;
+  object-fit:cover;
+  transition:transform .25s ease;
+}
+
+.preview-card:hover img {
+  transform:scale(1.025);
+}
+
+.preview-body {
+  padding:15px 12px 10px;
+}
 
 .preview-body h2 {
   font-family:"Cormorant Garamond",Georgia,serif;
@@ -258,7 +301,9 @@ img { display:block; width:100%; }
 
 /* GENERAL SECTIONS */
 
-.section { padding:100px 0; }
+.section {
+  padding:100px 0;
+}
 
 .eyebrow {
   font-size:11px;
@@ -284,7 +329,9 @@ img { display:block; width:100%; }
 
 /* ABOUT */
 
-.about { background:#e8ded0; }
+.about {
+  background:#e8ded0;
+}
 
 .about-grid {
   display:grid;
@@ -320,7 +367,9 @@ img { display:block; width:100%; }
 
 /* SERVICES */
 
-.services-detail { background:var(--ivory); }
+.services-detail {
+  background:var(--ivory);
+}
 
 .detail-grid {
   display:grid;
@@ -362,8 +411,13 @@ img { display:block; width:100%; }
   color:var(--ivory);
 }
 
-.work .eyebrow { color:var(--gold); }
-.work .section-lead { color:#d7cfc3; }
+.work .eyebrow {
+  color:var(--gold);
+}
+
+.work .section-lead {
+  color:#d7cfc3;
+}
 
 .work-grid {
   display:grid;
@@ -424,7 +478,30 @@ img { display:block; width:100%; }
   text-transform:uppercase;
 }
 
-.button:hover { background:#365051; }
+.button:hover {
+  background:#365051;
+}
+
+.instagram-contact {
+  margin:35px auto 0;
+}
+
+.instagram-contact a {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  color:#745139;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+}
+
+.instagram-contact svg {
+  width:21px;
+  height:21px;
+}
 
 /* FOOTER */
 
@@ -452,7 +529,9 @@ footer {
   margin:6px 0 22px;
 }
 
-footer p { margin:7px 0; }
+footer p {
+  margin:7px 0;
+}
 
 /* TABLETS */
 
@@ -475,14 +554,18 @@ footer p { margin:7px 0; }
     border-right:none;
   }
 
-  .preview-card img { height:230px; }
+  .preview-photo {
+    height:230px;
+  }
 
   .about-grid {
     grid-template-columns:1fr;
     gap:10px;
   }
 
-  .work-grid { grid-template-columns:1fr; }
+  .work-grid {
+    grid-template-columns:1fr;
+  }
 }
 
 /* PHONES */
@@ -492,13 +575,21 @@ footer p { margin:7px 0; }
     width:min(100% - 32px,1240px);
   }
 
-  .brand-main { font-size:37px; }
+  .brand-main {
+    font-size:37px;
+  }
 
-  .nav-links { gap:11px 15px; }
+  .nav-links {
+    gap:11px 15px;
+  }
 
-  .nav-links a { font-size:9px; }
+  .nav-links a {
+    font-size:9px;
+  }
 
-  .hero { min-height:520px; }
+  .hero {
+    min-height:520px;
+  }
 
   .hero::after {
     background:rgba(8,16,17,.47);
@@ -519,36 +610,64 @@ footer p { margin:7px 0; }
     letter-spacing:1.5px;
   }
 
-  .hero-tagline { font-size:21px; }
+  .hero-tagline {
+    font-size:21px;
+  }
 
-  .preview-grid { gap:14px; }
+  .preview-grid {
+    gap:14px;
+  }
 
   .preview-card {
     padding-right:0;
     border-right:none;
   }
 
-  .preview-card img { height:150px; }
+  .preview-photo {
+    height:150px;
+  }
 
-  .preview-body { padding:13px 4px; }
+  .preview-body {
+    padding:13px 4px;
+  }
 
-  .preview-body h2 { font-size:23px; }
+  .preview-body h2 {
+    font-size:23px;
+  }
 
   .preview-body p {
     font-size:9px;
     letter-spacing:1.2px;
   }
 
-  .section { padding:68px 0; }
+  .section {
+    padding:68px 0;
+  }
 
-  .detail-grid { grid-template-columns:1fr; }
+  .detail-grid {
+    grid-template-columns:1fr;
+  }
 
-  .founders-name { font-size:26px; }
+  .founders-name {
+    font-size:26px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior:auto;
+  }
+
+  .preview-photo img {
+    transition:none;
+  }
 }
 </style>
 </head>
 
 <body>
+
+<!-- HEADER -->
 
 <header class="site-header">
   <div class="container nav">
@@ -566,6 +685,23 @@ footer p { margin:7px 0; }
       <a href="#production">Production</a>
       <a href="#live">Live &amp; Tour</a>
       <a href="#contact">Contact</a>
+
+      <a
+        class="instagram-nav"
+        href="https://www.instagram.com/omniasessionstrings/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Omnia Session Strings on Instagram">
+
+        <svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.7"
+          stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
     </nav>
 
   </div>
@@ -573,7 +709,7 @@ footer p { margin:7px 0; }
 
 <main>
 
-<!-- HERO -->
+<!-- SPLIT-STUDIO HERO -->
 
 <section class="hero" id="home">
 
@@ -582,13 +718,15 @@ footer p { margin:7px 0; }
     <div class="hero-image">
       <img
         src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
-        alt="">
+        alt=""
+        fetchpriority="high">
     </div>
 
     <div class="hero-image">
       <img
         src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
-        alt="">
+        alt=""
+        fetchpriority="high">
     </div>
 
   </div>
@@ -612,20 +750,24 @@ footer p { margin:7px 0; }
     </p>
 
   </div>
-
 </section>
 
-<!-- SERVICE PHOTO PANELS -->
+<!-- FOUR SERVICE PHOTO PANELS -->
 
-<section class="service-preview">
+<section class="service-preview" aria-label="Explore our services">
 
   <div class="container preview-grid">
 
+    <!-- RECORDING -->
+
     <a href="#recording" class="preview-card">
-      <img
-        src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-        alt="Professional recording microphone"
-        loading="lazy">
+
+      <div class="preview-photo">
+        <img
+          src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+          alt="Professional studio microphone"
+          loading="lazy">
+      </div>
 
       <div class="preview-body">
         <h2>Recording</h2>
@@ -633,13 +775,19 @@ footer p { margin:7px 0; }
         <p>World Class Sound</p>
         <div class="preview-arrow" aria-hidden="true">→</div>
       </div>
+
     </a>
 
+    <!-- ORCHESTRATION: UPDATED PHOTO -->
+
     <a href="#orchestration" class="preview-card">
-      <img
-        src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-        alt="Acoustic instrument detail"
-        loading="lazy">
+
+      <div class="preview-photo">
+        <img
+          src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+          alt="Musical score and orchestral artistry"
+          loading="lazy">
+      </div>
 
       <div class="preview-body">
         <h2>Orchestration</h2>
@@ -647,13 +795,19 @@ footer p { margin:7px 0; }
         <p>Story in Every Note</p>
         <div class="preview-arrow" aria-hidden="true">→</div>
       </div>
+
     </a>
 
+    <!-- PRODUCTION: UPDATED PHOTO -->
+
     <a href="#production" class="preview-card">
-      <img
-        src="https://images.unsplash.com/photo-1593078166033-9c601b0d5f8b?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-        alt="Music production equipment"
-        loading="lazy">
+
+      <div class="preview-photo">
+        <img
+          src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+          alt="Music production and sound equipment"
+          loading="lazy">
+      </div>
 
       <div class="preview-body">
         <h2>Production</h2>
@@ -661,13 +815,19 @@ footer p { margin:7px 0; }
         <p>Creative Collaboration</p>
         <div class="preview-arrow" aria-hidden="true">→</div>
       </div>
+
     </a>
 
+    <!-- LIVE AND TOUR -->
+
     <a href="#live" class="preview-card">
-      <img
-        src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-        alt="Live music performance environment"
-        loading="lazy">
+
+      <div class="preview-photo">
+        <img
+          src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+          alt="Live music performance environment"
+          loading="lazy">
+      </div>
 
       <div class="preview-body">
         <h2>Live &amp; Tour</h2>
@@ -675,6 +835,7 @@ footer p { margin:7px 0; }
         <p>From Studio to Stage</p>
         <div class="preview-arrow" aria-hidden="true">→</div>
       </div>
+
     </a>
 
   </div>
@@ -812,7 +973,6 @@ footer p { margin:7px 0; }
       </article>
 
     </div>
-
   </div>
 </section>
 
@@ -868,7 +1028,6 @@ footer p { margin:7px 0; }
       </article>
 
     </div>
-
   </div>
 </section>
 
@@ -902,6 +1061,27 @@ footer p { margin:7px 0; }
         href="mailto:omniasessions@gmail.com?subject=Omnia%20Session%20Strings%20Project%20Inquiry">
         Get in Touch
       </a>
+    </div>
+
+    <div class="instagram-contact">
+
+      <a
+        href="https://www.instagram.com/omniasessionstrings/"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.7"
+          stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+
+        Follow Us on Instagram
+      </a>
+
     </div>
 
   </div>
