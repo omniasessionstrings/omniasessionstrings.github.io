@@ -31,9 +31,13 @@
   --muted:#6b665f;
 }
 
-* { box-sizing:border-box; }
+* {
+  box-sizing:border-box;
+}
 
-html { scroll-behavior:smooth; }
+html {
+  scroll-behavior:smooth;
+}
 
 body {
   margin:0;
@@ -298,7 +302,9 @@ img {
 
 /* GENERAL SECTIONS */
 
-.section { padding:100px 0; }
+.section {
+  padding:100px 0;
+}
 
 .eyebrow {
   font-size:11px;
@@ -324,7 +330,9 @@ img {
 
 /* ABOUT */
 
-.about { background:#e8ded0; }
+.about {
+  background:#e8ded0;
+}
 
 .about-grid {
   display:grid;
@@ -360,7 +368,9 @@ img {
 
 /* SERVICES */
 
-.services-detail { background:var(--ivory); }
+.services-detail {
+  background:var(--ivory);
+}
 
 .detail-grid {
   display:grid;
@@ -460,9 +470,13 @@ img {
   color:var(--ivory);
 }
 
-.work .eyebrow { color:var(--gold); }
+.work .eyebrow {
+  color:var(--gold);
+}
 
-.work .section-lead { color:#d7cfc3; }
+.work .section-lead {
+  color:#d7cfc3;
+}
 
 .work-grid {
   display:grid;
@@ -523,9 +537,13 @@ img {
   text-transform:uppercase;
 }
 
-.button:hover { background:#365051; }
+.button:hover {
+  background:#365051;
+}
 
-.instagram-contact { margin:35px auto 0; }
+.instagram-contact {
+  margin:35px auto 0;
+}
 
 .instagram-contact a {
   display:inline-flex;
@@ -570,7 +588,9 @@ footer {
   margin:6px 0 22px;
 }
 
-footer p { margin:7px 0; }
+footer p {
+  margin:7px 0;
+}
 
 /* TABLETS */
 
@@ -593,14 +613,18 @@ footer p { margin:7px 0; }
     border-right:none;
   }
 
-  .preview-photo { height:230px; }
+  .preview-photo {
+    height:230px;
+  }
 
   .about-grid {
     grid-template-columns:1fr;
     gap:10px;
   }
 
-  .work-grid { grid-template-columns:1fr; }
+  .work-grid {
+    grid-template-columns:1fr;
+  }
 }
 
 /* PHONES */
@@ -610,13 +634,21 @@ footer p { margin:7px 0; }
     width:min(100% - 32px,1240px);
   }
 
-  .brand-main { font-size:37px; }
+  .brand-main {
+    font-size:37px;
+  }
 
-  .nav-links { gap:11px 15px; }
+  .nav-links {
+    gap:11px 15px;
+  }
 
-  .nav-links a { font-size:9px; }
+  .nav-links a {
+    font-size:9px;
+  }
 
-  .hero { min-height:520px; }
+  .hero {
+    min-height:520px;
+  }
 
   .hero::after {
     background:rgba(8,16,17,.47);
@@ -637,38 +669,61 @@ footer p { margin:7px 0; }
     letter-spacing:1.5px;
   }
 
-  .hero-tagline { font-size:21px; }
+  .hero-tagline {
+    font-size:21px;
+  }
 
-  .preview-grid { gap:14px; }
+  .preview-grid {
+    gap:14px;
+  }
 
   .preview-card {
     padding-right:0;
     border-right:none;
   }
 
-  .preview-photo { height:150px; }
+  .preview-photo {
+    height:150px;
+  }
 
-  .preview-body { padding:13px 4px; }
+  .preview-body {
+    padding:13px 4px;
+  }
 
-  .preview-body h2 { font-size:23px; }
+  .preview-body h2 {
+    font-size:23px;
+  }
 
   .preview-body p {
     font-size:9px;
     letter-spacing:1.2px;
   }
 
-  .section { padding:68px 0; }
+  .section {
+    padding:68px 0;
+  }
 
-  .detail-grid { grid-template-columns:1fr; }
+  .detail-grid {
+    grid-template-columns:1fr;
+  }
 
-  .credits-grid { grid-template-columns:1fr; }
+  .credits-grid {
+    grid-template-columns:1fr;
+  }
 
-  .founders-name { font-size:26px; }
+  .founders-name {
+    font-size:26px;
+  }
 }
 
 @media(prefers-reduced-motion:reduce) {
-  html { scroll-behavior:auto; }
-  .preview-photo img { transition:none; }
+  html {
+    scroll-behavior:auto;
+  }
+
+  .preview-photo img {
+    transition:none;
+  }
 }
 </style>
 </head>
@@ -744,7 +799,9 @@ footer p { margin:7px 0; }
 
     <h1 class="hero-title">OMNIA</h1>
 
-    <p class="hero-subtitle">Session Strings</p>
+    <p class="hero-subtitle">
+      Session Strings
+    </p>
 
     <div class="hero-rule"></div>
 
@@ -765,7 +822,10 @@ footer p { margin:7px 0; }
 
   <div class="container preview-grid">
 
+    <!-- RECORDING -->
+
     <a href="#recording" class="preview-card">
+
       <div class="preview-photo">
         <img
           src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
@@ -779,9 +839,13 @@ footer p { margin:7px 0; }
         <p>World Class Sound</p>
         <div class="preview-arrow" aria-hidden="true">→</div>
       </div>
+
     </a>
 
+    <!-- ORCHESTRATION -->
+
     <a href="#orchestration" class="preview-card">
+
       <div class="preview-photo">
         <img
           src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
@@ -795,13 +859,17 @@ footer p { margin:7px 0; }
         <p>Story in Every Note</p>
         <div class="preview-arrow" aria-hidden="true">→</div>
       </div>
+
     </a>
 
+    <!-- PRODUCTION: PHOTO SWITCHED -->
+
     <a href="#production" class="preview-card">
+
       <div class="preview-photo">
         <img
-          src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-          alt="Music production and sound equipment"
+          src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+          alt="Music production and performance environment"
           loading="lazy">
       </div>
 
@@ -811,13 +879,17 @@ footer p { margin:7px 0; }
         <p>Creative Collaboration</p>
         <div class="preview-arrow" aria-hidden="true">→</div>
       </div>
+
     </a>
 
+    <!-- LIVE AND TOUR: PHOTO SWITCHED -->
+
     <a href="#live" class="preview-card">
+
       <div class="preview-photo">
         <img
-          src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-          alt="Live music performance environment"
+          src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+          alt="Live music and concert environment"
           loading="lazy">
       </div>
 
@@ -827,6 +899,7 @@ footer p { margin:7px 0; }
         <p>From Studio to Stage</p>
         <div class="preview-arrow" aria-hidden="true">→</div>
       </div>
+
     </a>
 
   </div>
@@ -1193,7 +1266,9 @@ footer p { margin:7px 0; }
 
   <div class="footer-logo">OMNIA</div>
 
-  <div class="footer-sub">Session Strings</div>
+  <div class="footer-sub">
+    Session Strings
+  </div>
 
   <p>
     The Art of Bringing Everything Together.
