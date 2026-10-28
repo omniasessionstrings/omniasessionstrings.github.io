@@ -1,22 +1,25 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Omnia Session Strings | From Studio to Stage</title>
 
-<meta name="description" content="Omnia Session Strings: recording, session engineering, musician contracting, orchestration, commissions, production, live performances and consulting. Founded by Hamilton and Nicole Hardin.">
+<meta name="description" content="Omnia Session Strings provides recording, session engineering, musician contracting, orchestration, production, commissioned works, and live performance services. Founded by Hamilton Hardin and Nicole Hardin.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 :root {
   --dark:#142526;
-  --deep:#0c191a;
+  --darkest:#0c191a;
   --ivory:#f3ece2;
   --cream:#e9dfd2;
   --bronze:#bd9271;
@@ -25,20 +28,33 @@
   --muted:#6b665f;
 }
 
-* { box-sizing:border-box; }
+* {
+  box-sizing:border-box;
+}
 
-html { scroll-behavior:smooth; }
+html {
+  scroll-behavior:smooth;
+}
 
 body {
   margin:0;
   background:var(--ivory);
   color:var(--ink);
-  font:15px/1.8 'DM Sans',sans-serif;
+  font-family:'DM Sans',sans-serif;
+  font-size:15px;
+  line-height:1.8;
 }
 
-a { color:inherit; text-decoration:none; }
+a {
+  color:inherit;
+  text-decoration:none;
+}
 
-img,video { display:block; max-width:100%; }
+img,
+video {
+  display:block;
+  max-width:100%;
+}
 
 .wrap {
   width:min(1180px,calc(100% - 44px));
@@ -48,7 +64,7 @@ img,video { display:block; max-width:100%; }
 /* NAVIGATION */
 
 .top {
-  background:var(--deep);
+  background:var(--darkest);
   color:var(--ivory);
 }
 
@@ -68,7 +84,9 @@ img,video { display:block; max-width:100%; }
 }
 
 .logo b {
-  font:400 44px 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:44px;
+  font-weight:400;
   letter-spacing:3px;
 }
 
@@ -83,6 +101,7 @@ img,video { display:block; max-width:100%; }
   gap:19px;
   flex-wrap:wrap;
   justify-content:flex-end;
+  align-items:center;
 }
 
 .links a {
@@ -91,19 +110,18 @@ img,video { display:block; max-width:100%; }
   letter-spacing:1.4px;
 }
 
-.links a:hover,
-.links a:focus {
+.links a:hover {
   color:var(--gold);
 }
 
-/* HOMEPAGE HERO */
+/* HERO */
 
 .hero {
   position:relative;
   min-height:540px;
   display:grid;
   place-items:center;
-  background:var(--deep);
+  background:var(--darkest);
   color:white;
   text-align:center;
   isolation:isolate;
@@ -123,16 +141,23 @@ img,video { display:block; max-width:100%; }
   object-fit:cover;
 }
 
-.hero:before {
-  content:'';
+.hero::before {
+  content:"";
   position:absolute;
   inset:0;
   background:rgba(8,16,17,.55);
   z-index:-1;
 }
 
+.hero .wrap {
+  padding:80px 0;
+}
+
 .hero h1 {
-  font:400 clamp(90px,16vw,180px)/.9 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(80px,16vw,180px);
+  font-weight:400;
+  line-height:.9;
   letter-spacing:5px;
   margin:0;
 }
@@ -150,18 +175,20 @@ img,video { display:block; max-width:100%; }
 }
 
 .hero .motto {
-  font:500 clamp(22px,3vw,35px) 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(22px,3vw,35px);
+  font-weight:500;
   letter-spacing:2px;
   text-transform:uppercase;
 }
 
 .hero .tag {
-  font:italic 29px 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:29px;
+  font-style:italic;
 }
 
-.hero .wrap { padding:80px 0; }
-
-/* FOUR PHOTO PANELS */
+/* FOUR SERVICE PHOTOGRAPHS */
 
 .tiles {
   display:grid;
@@ -171,13 +198,15 @@ img,video { display:block; max-width:100%; }
 }
 
 .tile img {
-  height:205px;
   width:100%;
+  height:205px;
   object-fit:cover;
 }
 
 .tile h2 {
-  font:500 30px 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:30px;
+  font-weight:500;
   text-transform:uppercase;
   margin:15px 0 0;
 }
@@ -192,9 +221,13 @@ img,video { display:block; max-width:100%; }
 
 /* GENERAL SECTIONS */
 
-.section { padding:90px 0; }
+.section {
+  padding:90px 0;
+}
 
-.cream { background:var(--cream); }
+.cream {
+  background:var(--cream);
+}
 
 .dark {
   background:var(--dark);
@@ -220,11 +253,16 @@ img,video { display:block; max-width:100%; }
 }
 
 h2.head {
-  font:400 clamp(42px,6vw,70px)/1.1 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(42px,6vw,70px);
+  font-weight:400;
+  line-height:1.1;
   margin:14px 0 24px;
 }
 
-.intro { max-width:780px; }
+.intro {
+  max-width:780px;
+}
 
 /* ABOUT */
 
@@ -238,19 +276,23 @@ h2.head {
   border-top:1px solid #c7b7a6;
   margin-top:28px;
   padding-top:20px;
-  font:500 29px 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:29px;
+  font-weight:500;
 }
 
 .founder small {
   display:block;
-  font:700 10px 'DM Sans',sans-serif;
+  font-family:'DM Sans',sans-serif;
+  font-size:10px;
+  font-weight:700;
   letter-spacing:2px;
   text-transform:uppercase;
   color:#8b6249;
   margin-bottom:8px;
 }
 
-/* SERVICES AND CREDITS */
+/* SERVICES */
 
 .service-grid,
 .credit-grid {
@@ -268,7 +310,9 @@ h2.head {
 
 .service h3,
 .credit h3 {
-  font:500 31px 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:31px;
+  font-weight:500;
   margin:5px 0 12px;
 }
 
@@ -277,7 +321,11 @@ h2.head {
   color:#59554e;
 }
 
-.credit h3 { color:var(--gold); }
+/* CREDITS */
+
+.credit h3 {
+  color:var(--gold);
+}
 
 .credit ul {
   list-style:none;
@@ -297,10 +345,12 @@ h2.head {
   margin-top:40px;
 }
 
-/* STUDIO REEL */
+/* VIDEO GALLERY */
 
 .reel-heading {
-  font:500 33px 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:33px;
+  font-weight:500;
   color:var(--gold);
   margin:42px 0 16px;
 }
@@ -330,13 +380,14 @@ h2.head {
 .studio-reel .media-card video {
   width:100%;
   height:255px;
-  aspect-ratio:16/10;
-  object-fit:cover;
-  background:#0c191a;
+  object-fit:contain;
+  background:var(--darkest);
 }
 
 .media-card h3 {
-  font:500 28px 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px;
+  font-weight:500;
   margin:14px 4px 4px;
 }
 
@@ -351,7 +402,20 @@ h2.head {
   font-size:13px;
 }
 
-/* FEATURED TRACKING PROJECT */
+/* VIDEO PLAYBACK */
+
+video {
+  background:#0c191a;
+  border:0;
+}
+
+video::-webkit-media-controls {
+  display:flex;
+}
+
+.video-fallback {
+  font-size:13px;
+}
 
 .feature-video {
   display:grid;
@@ -365,22 +429,30 @@ h2.head {
 .feature-video video {
   width:100%;
   max-height:450px;
-  background:#0c191a;
+  object-fit:contain;
 }
 
 .feature-video h3 {
-  font:500 34px 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:34px;
+  font-weight:500;
   color:var(--gold);
 }
 
-.feature-video p { color:#d6cdc1; }
+.feature-video p {
+  color:#d6cdc1;
+}
 
 /* CONTACT */
 
-.contact { text-align:center; }
+.contact {
+  text-align:center;
+}
 
 .email {
-  font:500 clamp(26px,4vw,42px) 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(26px,4vw,42px);
+  font-weight:500;
   color:#745139;
   overflow-wrap:anywhere;
   border-bottom:1px solid var(--bronze);
@@ -406,7 +478,7 @@ h2.head {
 /* FOOTER */
 
 footer {
-  background:var(--deep);
+  background:var(--darkest);
   color:#d7cfc3;
   text-align:center;
   padding:36px 15px;
@@ -416,7 +488,9 @@ footer {
 footer strong {
   display:block;
   color:var(--gold);
-  font:400 42px 'Cormorant Garamond',serif;
+  font-family:'Cormorant Garamond',serif;
+  font-size:42px;
+  font-weight:400;
 }
 
 footer small {
@@ -426,17 +500,22 @@ footer small {
   text-transform:uppercase;
 }
 
-footer p { margin:7px 0; }
+footer p {
+  margin:7px 0;
+}
 
-/* RESPONSIVE DESIGN */
+/* MOBILE */
 
 @media(max-width:900px) {
+
   .nav {
     flex-direction:column;
     padding:18px 0;
   }
 
-  .links { justify-content:center; }
+  .links {
+    justify-content:center;
+  }
 
   .tiles {
     grid-template-columns:repeat(2,1fr);
@@ -446,33 +525,55 @@ footer p { margin:7px 0; }
     grid-template-columns:1fr;
     gap:10px;
   }
+
 }
 
 @media(max-width:600px) {
-  .wrap { width:calc(100% - 30px); }
 
-  .hero { min-height:480px; }
+  .wrap {
+    width:calc(100% - 30px);
+  }
 
-  .hero h1 { font-size:80px; }
+  .hero {
+    min-height:480px;
+  }
 
-  .hero .sub { letter-spacing:5px; }
+  .hero h1 {
+    font-size:80px;
+  }
 
-  .hero .tag { font-size:22px; }
+  .hero .sub {
+    letter-spacing:5px;
+  }
 
-  .tile img { height:145px; }
+  .hero .tag {
+    font-size:22px;
+  }
 
-  .tile h2 { font-size:23px; }
+  .tile img {
+    height:145px;
+  }
 
-  .section { padding:65px 0; }
+  .tile h2 {
+    font-size:23px;
+  }
+
+  .section {
+    padding:65px 0;
+  }
 
   .service-grid,
   .credit-grid {
     grid-template-columns:1fr;
   }
 
-  .links { gap:10px; }
+  .links {
+    gap:10px;
+  }
 
-  .links a { font-size:9px; }
+  .links a {
+    font-size:9px;
+  }
 
   .studio-reel .media-card {
     flex-basis:85%;
@@ -486,12 +587,17 @@ footer p { margin:7px 0; }
   .feature-video {
     grid-template-columns:1fr;
   }
+
 }
 
 @media(prefers-reduced-motion:reduce) {
-  html { scroll-behavior:auto; }
+  html {
+    scroll-behavior:auto;
+  }
 }
+
 </style>
+
 </head>
 
 <body>
@@ -499,6 +605,7 @@ footer p { margin:7px 0; }
 <!-- HEADER -->
 
 <header class="top">
+
   <div class="wrap nav">
 
     <a href="#home" class="logo">
@@ -507,6 +614,7 @@ footer p { margin:7px 0; }
     </a>
 
     <nav class="links" aria-label="Main navigation">
+
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#credits">Credits</a>
@@ -519,14 +627,16 @@ footer p { margin:7px 0; }
         rel="noopener noreferrer">
         Instagram
       </a>
+
     </nav>
 
   </div>
+
 </header>
 
 <main>
 
-<!-- HOMEPAGE -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -562,44 +672,52 @@ footer p { margin:7px 0; }
 
 </section>
 
-<!-- FOUR FEATURED SERVICE PHOTOS -->
+<!-- FOUR SERVICE IMAGES -->
 
-<div class="wrap tiles" aria-label="Featured services">
+<div class="wrap tiles">
 
   <a class="tile" href="#services">
+
     <img
       src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
       alt="Studio microphone">
 
     <h2>Recording</h2>
     <p>World Class Sound</p>
+
   </a>
 
   <a class="tile" href="#services">
+
     <img
       src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
       alt="Orchestral music">
 
     <h2>Orchestration</h2>
     <p>Story in Every Note</p>
+
   </a>
 
   <a class="tile" href="#services">
+
     <img
       src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
       alt="Music production">
 
     <h2>Production</h2>
     <p>Creative Collaboration</p>
+
   </a>
 
   <a class="tile" href="#services">
+
     <img
       src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
       alt="Live music">
 
     <h2>Live &amp; Tour</h2>
     <p>From Studio to Stage</p>
+
   </a>
 
 </div>
@@ -611,47 +729,53 @@ footer p { margin:7px 0; }
   <div class="wrap about-grid">
 
     <div>
-      <div class="eyebrow">The Omnia Story</div>
+
+      <div class="eyebrow">
+        The Omnia Story
+      </div>
 
       <h2 class="head">
         Everything begins with a vision.
       </h2>
+
     </div>
 
     <div>
 
       <p>
-        Rooted in the Latin word meaning "all things,"
-        Omnia represents the art of bringing every
-        element of music together.
+        Rooted in the Latin word meaning
+        "all things," Omnia represents the art
+        of bringing every element of music together.
       </p>
 
       <p>
-        Omnia Session Strings brings together artistry,
-        personnel, technical expertise, and creative
-        leadership for recording sessions, commissioned
-        works, visual projects, and live productions.
+        Omnia Session Strings brings together
+        artistry, personnel, technical expertise,
+        and creative leadership for recording
+        sessions, commissioned works, visual
+        projects, and live productions.
       </p>
 
       <p>
-        From solo musicians and intimate ensembles to
-        full orchestras, we coordinate the talent and
-        resources needed to realize each musical vision.
+        From solo musicians and intimate ensembles
+        to full orchestras, we coordinate the
+        talent and resources needed to realize
+        each musical vision.
       </p>
 
       <p>
         We approach every project with musical
         sensitivity, preparation, collaboration,
         and a commitment to excellence.
-        Our founders have earned four GRAMMY Awards
-        collectively.
+        Our founders have earned four GRAMMY
+        Awards collectively.
       </p>
 
       <div class="founder">
 
         <small>
           4× GRAMMY Award-Winning Founders ·
-          Four collective wins
+          Four Collective Wins
         </small>
 
         Hamilton Hardin &amp; Nicole Hardin
@@ -664,118 +788,153 @@ footer p { margin:7px 0; }
 
 </section>
 
-<!-- EXPANDED SERVICES -->
+<!-- SERVICES -->
 
 <section class="section" id="services">
 
   <div class="wrap">
 
-    <div class="eyebrow">Our Expertise</div>
+    <div class="eyebrow">
+      Our Expertise
+    </div>
 
     <h2 class="head">
       From concept to completion.
     </h2>
 
     <p class="intro">
-      Professional musical services tailored to artists,
-      producers, churches, studios, venues, creative teams,
-      and orchestral organizations.
+      From a single musician to a full orchestra.
+      From the recording studio to the concert stage.
+      Omnia provides comprehensive musical services
+      for artists, producers, churches, studios,
+      venues, and creative teams.
     </p>
 
     <div class="service-grid">
 
       <article class="service">
-        <h3>Recording &amp; String Sessions</h3>
+
+        <h3>
+          Recording &amp; Session Engineering
+        </h3>
 
         <p>
-          Professional studio recording, live orchestral
-          tracking, and string sessions for songs, albums,
-          soundtracks, and video productions.
+          Professional studio recording, audio
+          engineering, microphone placement,
+          session preparation, multitrack recording,
+          live orchestral tracking, and coordination
+          with musicians and producers.
         </p>
+
       </article>
 
       <article class="service">
-        <h3>Session Engineering</h3>
+
+        <h3>
+          Musician Contracting &amp; Ensemble Coordination
+        </h3>
 
         <p>
-          Recording and audio engineering support,
-          session preparation, microphone placement,
-          multitrack capture, and coordination with
-          producers and musicians.
+          Personnel sourcing and contracting for
+          tours, weddings, churches, recordings,
+          concerts, special events, and productions.
+          From solo instrumentalists to chamber
+          ensembles and full symphony orchestras.
         </p>
+
       </article>
 
       <article class="service">
-        <h3>Musician Contracting</h3>
+
+        <h3>
+          Strings &amp; Ensemble Services
+        </h3>
 
         <p>
-          Talent sourcing, personnel contracting,
-          ensemble coordination, and session management
-          for tours, weddings, churches, studio recordings,
-          concerts, and special events—from soloists and
-          small ensembles to full orchestras.
+          Soloists, duos, trios, quartets, string
+          sections, chamber ensembles, and full
+          orchestras for studio recording, live
+          performance, filmed performances,
+          and video shoots.
         </p>
+
       </article>
 
       <article class="service">
-        <h3>Orchestration, Arranging &amp; Composition</h3>
+
+        <h3>
+          Orchestration, Arranging &amp; Composition
+        </h3>
 
         <p>
-          Original compositions, custom arrangements,
-          orchestration, score preparation, and musical
-          development for studio and stage.
+          Original music, custom arrangements,
+          orchestration, score preparation,
+          and musical development for recording
+          artists, ensembles, orchestras,
+          and live productions.
         </p>
+
       </article>
 
       <article class="service">
-        <h3>Commissioned Works</h3>
+
+        <h3>
+          Music Production
+        </h3>
 
         <p>
-          Creative development and delivery of custom
-          compositions and orchestral arrangements for
-          ensembles, presenters, artists, and special projects.
+          Music producing, creative direction,
+          pre-recording production, recording
+          collaboration, mixing, mastering,
+          and musical development from concept
+          to final delivery.
         </p>
+
       </article>
 
       <article class="service">
-        <h3>Music Production</h3>
+
+        <h3>
+          Live Performances &amp; Touring
+        </h3>
 
         <p>
-          Production, creative direction, recording
-          collaboration, mixing, mastering, and musical
-          development from early concept to final delivery.
+          Musical personnel and production
+          support for churches, worship services,
+          concert venues, theaters, tours,
+          weddings, and special events.
         </p>
+
       </article>
 
       <article class="service">
-        <h3>Live Performances &amp; Touring</h3>
+
+        <h3>
+          Commissioned Works
+        </h3>
 
         <p>
-          Musicians, ensembles, contracting, conducting,
-          and musical direction for churches, worship
-          services, concert halls, theaters, tours,
-          and special events.
+          Custom compositions, symphonic works,
+          orchestral arrangements, and specially
+          commissioned musical projects for
+          organizations, ensembles, and artists.
         </p>
+
       </article>
 
       <article class="service">
-        <h3>String Performances &amp; Video Shoots</h3>
+
+        <h3>
+          Music Consulting
+        </h3>
 
         <p>
-          String musicians and orchestral ensembles
-          for filmed performances, live tracking videos,
-          music videos, and other visual productions.
+          Guidance on instrumentation,
+          ensemble selection, musician personnel,
+          session logistics, musical planning,
+          and orchestral production.
         </p>
-      </article>
 
-      <article class="service">
-        <h3>Music Consulting</h3>
-
-        <p>
-          Guidance on instrumentation, ensemble size,
-          orchestral production, personnel planning,
-          session logistics, and creative strategy.
-        </p>
       </article>
 
     </div>
@@ -784,7 +943,7 @@ footer p { margin:7px 0; }
 
 </section>
 
-<!-- SELECTED CREDITS -->
+<!-- CREDITS -->
 
 <section class="section dark" id="credits">
 
@@ -799,10 +958,10 @@ footer p { margin:7px 0; }
     </h2>
 
     <p class="intro">
-      Selected professional credits and collaborations
-      from Omnia Session Strings and the individual
-      careers of its founders, Hamilton Hardin and
-      Nicole Hardin.
+      Selected professional credits and
+      collaborations from Omnia Session Strings
+      and the individual careers of its founders,
+      Hamilton Hardin and Nicole Hardin.
     </p>
 
     <div class="credit-grid">
@@ -815,6 +974,9 @@ footer p { margin:7px 0; }
 
         <ul>
           <li>Mariah Carey</li>
+          <li>Tyrese Gibson</li>
+          <li>Yolanda Adams</li>
+          <li>Stevie Wonder</li>
           <li>Flavour</li>
           <li>Kenny Lattimore</li>
           <li>Tyla</li>
@@ -843,7 +1005,9 @@ footer p { margin:7px 0; }
 
       <div class="credit">
 
-        <h3>Live &amp; Touring Productions</h3>
+        <h3>
+          Live &amp; Touring Productions
+        </h3>
 
         <ul>
           <li>Fantasia</li>
@@ -857,22 +1021,36 @@ footer p { margin:7px 0; }
 
       <div class="credit">
 
-        <h3>Television &amp; Productions</h3>
+        <h3>
+          Television &amp; Productions
+        </h3>
 
         <ul>
-          <li>The Tonight Show Starring Jimmy Fallon</li>
+
+          <li>
+            The Tonight Show Starring Jimmy Fallon
+          </li>
+
           <li>Jimmy Kimmel Live!</li>
-          <li>The Late Show with Stephen Colbert</li>
+
+          <li>
+            The Late Show with Stephen Colbert
+          </li>
+
           <li>The GRAMMY Awards</li>
 
           <li>
-            2026 GRAMMY Awards — D'Angelo Tribute:
-            string and harp arranging, musician contracting,
-            and pre-recording production for the set
+            2026 GRAMMY Awards —
+            D'Angelo Tribute:
+            String &amp; Harp Arranging,
+            Musician Contracting,
+            and Pre-Recording Production
           </li>
 
           <li>American Music Awards</li>
+
           <li>American Idol</li>
+
         </ul>
 
       </div>
@@ -881,7 +1059,9 @@ footer p { margin:7px 0; }
 
       <div class="credit">
 
-        <h3>Symphonic &amp; Orchestral Work</h3>
+        <h3>
+          Symphonic &amp; Orchestral Work
+        </h3>
 
         <ul>
           <li>Atlanta Symphony Orchestra</li>
@@ -909,11 +1089,12 @@ footer p { margin:7px 0; }
     </div>
 
     <p class="note">
-      Credits and commissions represent selected work
-      across the company and its founders' individual
-      careers. They do not necessarily indicate that
-      every project was commissioned, produced, or
-      contracted directly through Omnia Session Strings, LLC.
+      Credits represent selected professional work
+      and collaborations across the company and
+      its founders' individual careers.
+      They do not necessarily indicate that each
+      project was produced or contracted directly
+      by Omnia Session Strings, LLC.
     </p>
 
   </div>
@@ -935,21 +1116,21 @@ footer p { margin:7px 0; }
     </h2>
 
     <p class="intro">
-      Explore our real studio photography and session
-      footage. Scroll sideways to see more, and tap
-      a video to play.
+      Explore our studio photography and recording
+      footage. Scroll horizontally to view the
+      sessions and tap a video to play.
     </p>
 
     <h3 class="reel-heading">
       Studio &amp; Recording
     </h3>
 
-    <!-- HORIZONTAL SCROLLABLE REEL -->
+    <!-- HORIZONTAL STUDIO GALLERY -->
 
     <div
       class="studio-reel"
       role="region"
-      aria-label="Scrollable studio photos and recording videos"
+      aria-label="Studio recording gallery"
       tabindex="0">
 
       <!-- STUDIO PHOTO 1 -->
@@ -964,8 +1145,8 @@ footer p { margin:7px 0; }
         <h3>Studio Orchestra Session</h3>
 
         <p>
-          Professional musicians working together
-          during a studio recording session.
+          Professional musicians working
+          together in the recording studio.
         </p>
 
       </article>
@@ -982,8 +1163,8 @@ footer p { margin:7px 0; }
         <h3>Orchestral Studio Preparation</h3>
 
         <p>
-          An overhead view of studio seating,
-          music stands, and recording setup.
+          A studio setup with orchestral
+          seating, music stands, and microphones.
         </p>
 
       </article>
@@ -994,10 +1175,12 @@ footer p { margin:7px 0; }
 
         <img
           src="media/production-engineering.jpg"
-          alt="Production and Session Engineering"
+          alt="Production and Engineering"
           loading="lazy">
 
-        <h3>Production &amp; Session Engineering</h3>
+        <h3>
+          Production &amp; Session Engineering
+        </h3>
 
         <p>
           Music production and engineering
@@ -1012,22 +1195,22 @@ footer p { margin:7px 0; }
 
         <video
           controls
-          preload="none"
           playsinline
-          aria-label="Studio recording session video 1">
+          preload="metadata"
+          aria-label="Studio Recording Session 1">
 
           <source
             src="media/IMG_9557.mp4"
             type="video/mp4">
 
-          Your browser does not support this video format.
+          Your browser does not support video.
         </video>
 
         <h3>Studio Recording Session 01</h3>
 
         <p>
-          Behind the scenes of studio recording
-          and musical collaboration.
+          Behind the scenes of a studio
+          recording session.
         </p>
 
       </article>
@@ -1038,22 +1221,21 @@ footer p { margin:7px 0; }
 
         <video
           controls
-          preload="none"
           playsinline
-          aria-label="Studio recording session video 2">
+          preload="metadata"
+          aria-label="Studio Recording Session 2">
 
           <source
             src="media/IMG_9590.mp4"
             type="video/mp4">
 
-          Your browser does not support this video format.
+          Your browser does not support video.
         </video>
 
         <h3>Studio Recording Session 02</h3>
 
         <p>
-          Behind the scenes of studio recording
-          and musical collaboration.
+          Musical collaboration in the studio.
         </p>
 
       </article>
@@ -1064,22 +1246,21 @@ footer p { margin:7px 0; }
 
         <video
           controls
-          preload="none"
           playsinline
-          aria-label="Studio recording session video 3">
+          preload="metadata"
+          aria-label="Studio Recording Session 3">
 
           <source
             src="media/IMG_0089.mp4"
             type="video/mp4">
 
-          Your browser does not support this video format.
+          Your browser does not support video.
         </video>
 
         <h3>Studio Recording Session 03</h3>
 
         <p>
-          Behind the scenes of studio recording
-          and musical collaboration.
+          Behind the scenes of studio recording.
         </p>
 
       </article>
@@ -1090,22 +1271,21 @@ footer p { margin:7px 0; }
 
         <video
           controls
-          preload="none"
           playsinline
-          aria-label="Studio recording session video 4">
+          preload="metadata"
+          aria-label="Studio Recording Session 4">
 
           <source
             src="media/IMG_0357.mp4"
             type="video/mp4">
 
-          Your browser does not support this video format.
+          Your browser does not support video.
         </video>
 
         <h3>Studio Recording Session 04</h3>
 
         <p>
-          Behind the scenes of studio recording
-          and musical collaboration.
+          Recording and creative collaboration.
         </p>
 
       </article>
@@ -1116,74 +1296,71 @@ footer p { margin:7px 0; }
 
         <video
           controls
-          preload="none"
           playsinline
-          aria-label="Studio recording session video 5">
+          preload="metadata"
+          aria-label="Studio Recording Session 5">
 
           <source
             src="media/IMG_0317.mp4"
             type="video/mp4">
 
-          Your browser does not support this video format.
+          Your browser does not support video.
         </video>
 
         <h3>Studio Recording Session 05</h3>
 
         <p>
-          Behind the scenes of studio recording
-          and musical collaboration.
+          Behind the scenes of a studio session.
         </p>
 
       </article>
 
-      <!-- STUDIO VIDEO 6 -->
+      <!-- CONVERTED MOV VIDEO 1 -->
 
       <article class="media-card">
 
         <video
           controls
-          preload="none"
           playsinline
-          aria-label="Studio recording session video 6">
+          preload="metadata"
+          aria-label="Studio Recording Session 6">
 
           <source
-            src="media/4378BEE5-F673-442B-84E6-1CD172012FF0.MOV"
-            type="video/quicktime">
+            src="media/4378BEE5-F673-442B-84E6-1CD172012FF0.mp4"
+            type="video/mp4">
 
-          Your browser does not support this video format.
+          Your browser does not support video.
         </video>
 
         <h3>Studio Recording Session 06</h3>
 
         <p>
-          Behind the scenes of studio recording
-          and musical collaboration.
+          Behind the scenes of studio recording.
         </p>
 
       </article>
 
-      <!-- STUDIO VIDEO 7 -->
+      <!-- CONVERTED MOV VIDEO 2 -->
 
       <article class="media-card">
 
         <video
           controls
-          preload="none"
           playsinline
-          aria-label="Studio recording session video 7">
+          preload="metadata"
+          aria-label="Studio Recording Session 7">
 
           <source
-            src="media/A0925EF8-ADCB-42AE-BE80-9304B0C18885.MOV"
-            type="video/quicktime">
+            src="media/A0925EF8-ADCB-42AE-BE80-9304B0C18885.mp4"
+            type="video/mp4">
 
-          Your browser does not support this video format.
+          Your browser does not support video.
         </video>
 
         <h3>Studio Recording Session 07</h3>
 
         <p>
-          Behind the scenes of studio recording
-          and musical collaboration.
+          Recording and musical collaboration.
         </p>
 
       </article>
@@ -1194,22 +1371,21 @@ footer p { margin:7px 0; }
 
         <video
           controls
-          preload="none"
           playsinline
-          aria-label="Studio recording session video 8">
+          preload="metadata"
+          aria-label="Studio Recording Session 8">
 
           <source
             src="media/8C2E8FAD-BD52-40D7-B681-507D531825C7.mp4"
             type="video/mp4">
 
-          Your browser does not support this video format.
+          Your browser does not support video.
         </video>
 
         <h3>Studio Recording Session 08</h3>
 
         <p>
-          Behind the scenes of studio recording
-          and musical collaboration.
+          Behind the scenes of a studio session.
         </p>
 
       </article>
@@ -1222,31 +1398,33 @@ footer p { margin:7px 0; }
       performance footage will be added later.
     </p>
 
-    <!-- FEATURED PROJECT -->
+    <!-- FEATURED VIDEO -->
 
     <h3 class="reel-heading">
-      Featured Project · Live Orchestra Tracking &amp; Video Shoot
+      Featured Project · Live Orchestra
+      Tracking &amp; Video Shoot
     </h3>
 
     <div class="feature-video">
 
       <video
         controls
-        preload="metadata"
         playsinline
-        aria-label="Live orchestra tracking session and video shoot">
+        preload="metadata"
+        aria-label="Live Orchestra Tracking and Video Shoot">
 
         <source
           src="media/IMG_0475.mp4"
           type="video/mp4">
 
-        Your browser does not support video playback.
+        Your browser does not support video.
       </video>
 
       <div>
 
         <h3>
-          Live Orchestra Tracking &amp; Video Shoot
+          Live Orchestra Tracking &amp;
+          Video Shoot
         </h3>
 
         <p>
@@ -1288,11 +1466,13 @@ footer p { margin:7px 0; }
     </a>
 
     <div>
+
       <a
         class="btn"
         href="mailto:omniasessions@gmail.com?subject=Omnia%20Session%20Strings%20Project%20Inquiry">
         Get in Touch
       </a>
+
     </div>
 
     <a
@@ -1334,8 +1514,32 @@ footer p { margin:7px 0; }
 </footer>
 
 <script>
-document.getElementById('year').textContent =
+
+/* AUTOMATIC COPYRIGHT YEAR */
+
+document.getElementById("year").textContent =
   new Date().getFullYear();
+
+/* PAUSE OTHER VIDEOS WHEN A NEW ONE PLAYS */
+
+const videos = document.querySelectorAll("video");
+
+videos.forEach(function(currentVideo) {
+
+  currentVideo.addEventListener("play", function() {
+
+    videos.forEach(function(otherVideo) {
+
+      if (otherVideo !== currentVideo) {
+        otherVideo.pause();
+      }
+
+    });
+
+  });
+
+});
+
 </script>
 
 </body>
